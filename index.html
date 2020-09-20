@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="assets/img/icon.jpg">
+    <title>42::SSD</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        
+        body {background: #fff;
+        
+        }
+
+        .intro {
+            background-image: url("assets/img/");
+            
+            
+        
+        }
+        .navbar .navbar-nav .nav-link {color :#fff;
+        
+        }
+        
+        .container-main{
+            padding-top:auto;
+            background-image: url("assets/img/hd.png" ); 
+            background-color:black;
+            background-attachment: fixed;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size:contain;
+            width: auto;
+            min-height: 600px;
+            
+            
+
+        }
+
+        .container2-main{
+           
+            background-image: url("assets/img/bgteste.jpg" ); 
+            background-color:black;
+            background-attachment: fixed;
+            background-position: center;
+            background-size:cover;
+            width:auto;
+            height: 300px;
+            
+
+        }
+
+        .contato{
+            backdrop-filter:black;
+            background-image: url();
+        }
+
+        .row{
+            text-align: justify;
+    
+        }
+    
+    /*Inicio CSS coding Nepal*/
+        .container-product{
+            position: relative;
+            height: 500px;
+            width: 380px;
+            background: #fff;
+            overflow: hidden;
+            box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            
+        }
+        
+        .container-product:hover{
+            box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+        }
+        .container-product .image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
+        .container-product .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease;
+        }
+        .container-product:hover .image img{
+        transform: scale(1.1);
+        }
+        .container-product .card-content{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        }
+        .card-content .wrapper{
+        position: absolute;
+        bottom: -100%;
+        width: 100%;
+        background: #fff;
+        padding: 10px 25px;
+        box-shadow: -1px -1px 6px rgba(0,0,0,0.1);
+        transition: bottom 0.3s ease;
+        
+        }
+        .container-product:hover .card-content .wrapper{
+        bottom: 0px;
+        
+        }
+        .wrapper .title{
+        font-size: 22px;
+        font-weight: 500;
+        }
+        .wrapper p{
+        font-size: 17px;
+        color: grey;                
+        }
+        .wrapper .price{
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        font-size: 23px;
+        font-weight: 600;
+        color: #456ABD;
+        }
+        .wrapper .content{
+        margin: 10px 0;
+        }
+        .wrapper .content .name{
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        }
+        .wrapper .content .size-value{
+        width: 50%;
+        display: flex;
+        margin: 5px 0;
+        justify-content: space-between;
+        }
+        .content .size-value span{
+        display: block;
+        margin-top: 20px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        color: #456ABD;
+        }
+        .content .size-value span.active{
+        background: #456ABD;
+        color: #fff;
+        }
+        .content .colour-value{
+        width: 30%;
+        display: flex;
+        margin: 10px 0;
+        justify-content: space-between;
+        }
+        .content .colour-value span{
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        }
+        .content .colour-value span.white{
+        background: lightgrey;
+        }
+        .content .colour-value span.blue{
+        background: #456ABD;
+        }
+        .content .colour-value span.yellow{
+        background: #EAA523;
+        }
+        .content .colour-value span.active:after{
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: -4px;
+        top: -4px;
+        box-sizing: border-box;
+        border: 2px solid #456ABD;
+        border-radius: 50%;
+        }
+        .content .colour-value span.white.active:after{
+        border-color: lightgrey;
+        }
+        .content .colour-value span.yellow.active:after{
+        border-color: #EAA523;
+        }
+        .wrapper .btns{
+        display: flex;
+        height: 80px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        }
+        .wrapper .btns button{
+        height: 40px;
+        width: 100%;
+        margin: 0 10px;
+        border: 2px solid #456ABD;
+        background: #456ABD;
+        outline: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+        }    
+    /*Fim CSS coding Nepal */
+
+    /* ajuste na intro para celular */
+        @media(max-width: 568px){
+            .container-main{
+                background-size:568px;
+            }
+            h4{
+            font-size:20px;
+            font-family: 'Poppins', sans-serif;
+            
+            }  
+            /*h1#ssdfortal{
+            font-size:50px;
+            font-weight:600;
+            font-family: poppins;
+            padding-top: 38px;
+            }*/      
+            h3{
+            font-size:22px;
+            font-weight:600;
+            font-family: 'Poppins', sans-serif;
+            }  
+            img#ssdintro{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                margin: 3px -5px -5px 128px;
+            }    
+            h1#divprodutos{
+                padding-top: 100px;
+                font-family: 'Poppins', sans-serif;
+            }
+            h1#divsobre{
+                padding-top: 70px;
+                font-family: 'Poppins', sans-serif;
+            }
+            img#imgsobre{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                margin: 3px -5px -5px 128px;
+               
+            }
+        }    
+      
+        
+        footer{
+            color: whitesmoke ;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+ 
+        
+</head>
+<body>
+    <div class="container-fluid px-0">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg" >
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/42logo42.svg" class="img-fluid" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-laptop-house"></i>  Home 
+                          <span class="sr-only">(página atual)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">
+                            <i class="fas fa-user-shield"></i>  Sobre Nós
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link " href="#ssds">
+                            <i class="far fa-hdd"></i>  SSDs
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contato">
+                            <i class="fas fa-mail-bulk"></i>  Contato
+                        </a>
+                      </li>
+                  </ul>
+                  
+                </div>
+              </nav>
+
+              <!--INICIO DA DIV PRINCIPAL-->
+
+              <div class="jumbotron jumbotron-fluid intro mt-5 mb-0" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2 col-md-6 col-xl-6" >
+                            <h1 class="display-4 " id="ssdfortal">SSDS em Fortaleza</h1>
+                          
+                            <h3 class="mt-5" >Somos especialistas em venda direta de SSD's de diversas marcas, nosso warehouse se localiza em Fortaleza - CE.</h3>
+
+                            <h4 class="mt-5">Produtos com pronta entrega e  garantia!  </h4>
+                            <h4 class="mt-2">Melhores preços do Mercado para nosso clientes final e revenda.  </h4>
+                            <h4 class="mt-2">Deseja um produto que está muito caro no Brasil? Somos a sua solução. </h4>
+                            <hr>
+                            <h3 class="text-center mt-5">Adquira já seu SSD!</h3>
+                            <p class="text-center mt-5 ">   
+                                <a class="btn btn-info btn-lg" href="https://api.whatsapp.com/send?phone=5585992701749" target="_blank" role="button">Iniciar WhatsApp!</a> 
+                            </p>
+                        </div>
+                        
+                        <div class="col-sm-6 col-md-6 col-xl-5" >
+                            
+                            <img src="assets/img/oem.png" alt="intro" class="img-fluid" id="ssdintro">
+                        </div>
+                    </div> 
+                </div>
+
+            </div><!--FINAL DA DIV PRINCIPAL-->
+        </header>
+
+      
+        <!--INICIO DA DIV COM BACKGROUND FIXO -->
+        <div class="container-main " class="img-responsive">
+            
+            
+
+           
+        </div><!-- FINAL DA DIV COM BACKGROUND FIXO-->
+        
+
+
+        <div class="container SSDS mt-5"  id="ssds" >
+            <h1 class="text-center mt-5" id="divprodutos"> 
+                
+                Trabalhamos com as Melhores do Mercado
+            </h1>
+            <hr>
+
+
+                <!--TESTE CARDS-->
+
+                <div class="container-product">
+                    <div class="image">
+                      <img src="assets/img/ssd3.png" alt="">
+                    </div>
+                <div class="card-content">
+                      <div class="wrapper">
+                        <div class="title">
+                        Kingston
+                        </div>
+              <p>6 meses de garantia!
+                
+              </p>
+              <span class="price">$199</span>
+              
+              <div class="content size">
+                <div class="name size-name">
+                    Capacidades Disponiveis
+                </div>
+                <div class="size-value">
+                  <span class="color1 active">120GB</span>
+                  <span class="color2">240GB</span>
+                  <span class="color3">480GB</span>
+                  
+                </div>
+              </div>
+              <div class="content size">
+                <div class="name size-name">
+                </div>
+              </div>
+              <div class="content colour">
+                          <div class="name colour-name">
+                              <!--Capacidade-->
+                          </div>
+                
+              </div>
+              <div class="btns">
+                         <a href="https://api.whatsapp.com/send?phone=85996249702&text=Olá vim Atráves do site gostaria de cotar os preços" target="_blank"><button>Comprar agora!</button></a>
+                          
+              </div>
+              </div>
+              </div>
+              </div>
+              <script>
+       
+                    $(".size-value span.color1").click(function(){
+                    $(".size-value span").removeClass("active");
+                    $(this).addClass("active");
+                    $(".price").text("R$ 189,00");
+                    });
+            
+                    $(".size-value span.color2").click(function(){
+                    $(".size-value span").removeClass("active");
+                    $(this).addClass("active");
+                    $(".price").text("R$ 279,00");
+                    });
+            
+                    $(".size-value span.color3").click(function(){
+                    $(".size-value span").removeClass("active");
+                    $(this).addClass("active");
+                    $(".price").text("R$ 469,00");
+                    });
+    
+    
+              </script>
+        
+
+
+<!--fim do teste coding nepal-->
+
+             
+        
+
+        </div><!-- FINAL DA ARTIGOS CONTAINER-->
+
+
+       <!-- DIV SOBRE-NOS -->    
+        <div class="jumbotron jumbotron-fluid mt-5 mb-0 sobre" id="sobre"  >
+            <div class="container" id="sobre">
+                <div class="row">
+                    
+                    <div class="col-sm-6 col-md-6 col-xl-6 " >
+                        <h1 class="display-4 mt-2" id="divsobre">Sobre Nós</h1>
+                            <hr>
+                            <br>
+                            <h4> 
+                            <p>Somos especialistas em importação de componentes para computadores, notebookes e semi-condutores.</p>
+                            <p>Oferecemos os melhores preços do mercado, fornecendo ótimos produtos com valores atrativos para quem quer revender.</p>
+                            <p>Nossos produtos são negociados diretamente com os Fabricantes, mantendo assim a garantia de fábrica e garantindo sua procedência.</p>
+                            <p>Valorizamos a transparência e a harmonia no relacionamento com nossos clientes.</p>
+                            <p>Fornecemos um canal de atendimento eficiente para garantir sua satisfação nas compras e no pós venda.<p>
+
+                            </h4>
+                    </div> 
+
+                    <div class="col-sm-6 col-md-6 col-xl-6  pt-5" >
+                        <img src="assets/img/bgcontato2.png" alt="bgsobre" class="img-fluid" id="imgsobre">
+                    </div> 
+                              
+                </div>
+            </div> 
+                
+            
+        </div><!-- FINAL DA DIV SOBRE-NOS-->
+
+
+        <!--INICIO DA SEGUNDA DIV COM BACKGROUND FIXO -->
+        <div class="container2-main">
+            
+            
+
+           
+        </div><!-- FINAL DA SEGUNDA DIV COM BACKGROUND FIXO-->
+        
+
+        <!-- DIV CONTATO -->    
+        <!-- <div class="contato jumbotron jumbotron-fluid mb-0"  id="contato"  >
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-xl-6 mt-5 mb-5" >
+                        <img src="assets/img/bgcontato.png" alt="bgcontato" class="img-fluid" bg-dark >
+                    </div> 
+                    <div class="col-sm-6" >
+                        <h2 class="display-5 mt-0">Seja um revendedor Parceiro</h2>
+                            <h3>Envie sua mensagem!</h3>
+                            <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputNome">Nome</label>
+                                    <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputSobroneme">Sobrenome</label>
+                                    <input type="text" class="form-control" id="inputSobroneme" placeholder="Sobrenome">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputEmail4">Email</label>
+                                  <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Escreva sua mensagem!</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                                  </div>
+                                <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Não sou um robô
+                                    </label>
+                                  </div>
+                                </div>
+                                    <p class="text-center">
+                                        <button type="submit" class="btn btn-dark btn-lg">Enviar!</button>
+                                    </p> 
+                              </form>
+                    </div> 
+                              
+                </div>
+            </div>  -->
+                
+            
+       <!--  </div>  --><!-- FINAL DA DIV CONTATO-->
+
+
+        <!--DIV FOOTER-->
+        <footer class="jumbotron jumbotron-fluid bg-dark mb-0 ">
+           <b> <p class="text-center">Desenvolvido por 
+               
+                &reg; JCom - Todos Direitos Reservados</p></b>
+                
+
+        </footer> <!--FINAL DA DIV FOOTER-->
+        
+
+  
+        
+
+    </div><!-- FINAL DA Container-->
+
+    
+</body>
+</html>
